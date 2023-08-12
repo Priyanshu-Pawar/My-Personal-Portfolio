@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,7 @@
   outline: none;
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
+  /* font-family: "Great Vibes", cursive; */
 }
 
 :root {
@@ -40,7 +43,7 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 9%;
+  padding: 2rem 8%;
   background: var(--bg-color);
   display: flex;
   justify-content: space-between;
@@ -49,10 +52,11 @@ section {
 }
 
 .logo {
-  font-size: 2.5rem;
+  font-size: 40px;
   color: var(--text-color);
   font-weight: 600;
   cursor: default;
+  font-family: "Great Vibes", cursive;
 }
 
 .navbar a {
@@ -83,7 +87,7 @@ section {
 
 /* image width */
 .home-img img {
-  width: 28vw;
+  width: 27vw;
 }
 .home-content h3 {
   font-size: 3.1rem;
@@ -122,8 +126,10 @@ span {
   transition: 0.5s ease;
 }
 
+/* Social meadia btn hover */
+
 .social-media a:hover {
-  background: var(--main-color);
+  background: var(--main-color2);
   color: var(--second-bg-color);
   box-shadow: 0 0 1rem var(--main-color);
 }
@@ -138,4 +144,275 @@ span {
   color: var(--second-bg-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  box-shadow: none;
+  background: var(--main-color2);
+}
+
+/* ABOUT STYLING */
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--second-bg-color);
+}
+
+.about-img img {
+  width: 27vw;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+/* PROJECT SECTION DESIGN */
+.projects h2 {
+  margin-bottom: 5rem;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.projects-container .projects-box {
+  flex: 1 1 30rem;
+  background: var(--second-bg-color);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid var(--bg-color);
+  transition: 0.5s ease;
+}
+
+.projects-container .projects-box:hover {
+  border-color: var(--main-color2);
+  transform: scale(1.02);
+}
+
+.projects-box iconify-icon {
+  font-size: 7rem;
+  color: var(--main-color);
+}
+
+.projects-box h3 {
+  margin-top: 0.8rem;
+  font-size: 2.6rem;
+}
+
+.projects-box p {
+  font-size: 1.5rem;
+  margin: 1rem 0 3rem;
+}
+
+/* PORTFOLIO SECTION DESIGN */
+
+.portfolio {
+  background: var(--second-bg-color);
+}
+
+.portfolio h2 {
+  margin-bottom: 4rem;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.portfolio-container .portfolio-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
+}
+
+.portfolio-box img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+.portfolio-box:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-box .portfolio-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  /* transform: translateY(100%); */
+  transition: 0.5s ease;
+}
+
+/* .portfolio-box:hover .portfolio-layer {
+  transform: translateY(0);
+} */
+
+.portfolio-layer h4 {
+  font-size: 3rem;
+}
+
+.portfolio-layer p {
+  font-size: 1.6rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.portfolio-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--text-color);
+  border-radius: 50%;
+}
+
+.portfolio-layer a:hover {
+  background: var(--main-color2);
+}
+
+.portfolio-layer a i {
+  font-size: 2rem;
+  color: var(--second-bg-color);
+}
+
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--second-bg-color);
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  align-items: center;
+  background: var(--second-bg-color);
+}
+.footer-content .pft {
+  margin-top: 2rem;
+}
+.footer-content p {
+  text-align: center;
+  font-size: 1.7rem;
+}
+.footer-content h2 {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 3rem;
+}
+.footer-content .social-media-ft {
+  text-align: center;
+}
+.social-media-ft a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2.5rem;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+}
+
+/* Social meadia btn hover */
+
+.social-media-ft a:hover {
+  background: var(--main-color2);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+  background: var(--main-color);
+  border-radius: 0.8rem;
+}
+
+.footer-iconTop a i {
+  font-size: 2rem;
+  color: var(--second-bg-color);
+}
+
+.footer-iconTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999999;
 }
