@@ -649,6 +649,15 @@ span {
     width: 90vw;
   }
 
+  .skills-container .skills-box img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .footer {
     flex-direction: column-reverse;
   }
