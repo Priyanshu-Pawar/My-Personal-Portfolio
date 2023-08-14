@@ -45,15 +45,15 @@ window.onscroll = () => {
 
 ScrollReveal({
   //   reset: true,
-  distance: "80px",
+  distance: "20px",
   duration: 2000,
   delay: 200,
 });
 
-ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
+ScrollReveal().reveal(".home-content, .heading, .menu-icon", { origin: "top" });
 
 ScrollReveal().reveal(
-  ".home-img, .projects-container, .portfolio-box, .contact form",
+  ".home-img, .projects-container,.skills-box, .portfolio-box, .contact form",
   {
     origin: "bottom",
   }
@@ -63,14 +63,19 @@ ScrollReveal().reveal(".home-content h1, .about-img ", {
   origin: "left",
 });
 
-ScrollReveal().reveal(".home-content p, .about-content", {
+ScrollReveal().reveal(".home-content p, .about-content .heading", {
   origin: "right",
 });
 
 // TYPED JS
 
 const typed = new Typed(".multiple-text", {
-  strings: ["Frontend Developer.", "Android Developer.", "Problem Solver.", "Open for SDE Role."],
+  strings: [
+    "Frontend Developer.",
+    "Android Developer.",
+    "Problem Solver.",
+    "Open for SDE Role.",
+  ],
   typeSpeed: 80,
   backSpeed: 50,
   backDelay: 1000,
