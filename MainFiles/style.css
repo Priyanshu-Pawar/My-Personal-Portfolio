@@ -248,10 +248,40 @@ span {
   margin: 1rem 0 3rem;
 }
 
+/* SKILLS SECTION DESIGN */
+.skills {
+  background: var(--second-bg-color);
+}
+.skills h2 {
+  margin-bottom: 4rem;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  gap: 4rem;
+}
+
+.skills-container .skills-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.5rem 0.2rem 0.2rem var(--main-color);
+  overflow: hidden;
+  display: flex;
+}
+
+.skills-container .skills-box img {
+  justify-content: center;
+  text-align: center;
+  width: 10rem;
+  margin: 1rem 1rem 1rem 2.3rem;
+}
+
 /* PORTFOLIO SECTION DESIGN */
 
 .portfolio {
-  background: var(--second-bg-color);
+  background: var(--bg-color);
 }
 
 .portfolio h2 {
@@ -330,6 +360,11 @@ span {
   color: var(--second-bg-color);
 }
 
+/* CONTACT SECTION DESIGN */
+.contact {
+  background: var(--second-bg-color);
+}
+
 .contact h2 {
   margin-bottom: 3rem;
 }
@@ -353,7 +388,7 @@ span {
   padding: 1.5rem;
   font-size: 1.6rem;
   color: var(--text-color);
-  background: var(--second-bg-color);
+  background: var(--bg-color);
   border-radius: 0.8rem;
   margin: 0.7rem 0;
 }
@@ -376,7 +411,7 @@ span {
   justify-content: center;
   padding: 3rem;
   align-items: center;
-  background: var(--second-bg-color);
+  background: var(--bg-color);
 }
 .footer-content .pft {
   margin-top: 2rem;
@@ -463,6 +498,10 @@ span {
     padding-bottom: 7rem;
   }
 
+  .skills {
+    padding-bottom: 7rem;
+  }
+
   .portfolio {
     padding-bottom: 7rem;
   }
@@ -536,7 +575,13 @@ span {
   }
 
   /* SKILLS SECTION IS REMAINING */
-  /* .skills */
+  .skills h2 {
+    margin-bottom: 3rem;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
   .portfolio h2 {
     margin-bottom: 3rem;
@@ -547,9 +592,30 @@ span {
   }
 }
 
+@media (max-width: 850px) {
+  .skills-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 @media (max-width: 617px) {
   .portfolio-container {
     grid-template-columns: 1fr;
+  }
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 590px) {
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -560,6 +626,15 @@ span {
 
   .contact form .input-box input {
     width: 100%;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 390px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
