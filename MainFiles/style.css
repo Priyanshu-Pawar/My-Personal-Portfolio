@@ -116,16 +116,17 @@ section {
 }
 
 span {
-  color: var(--main-color);
+  color: var(--main-color2);
 }
 .home-content h1 {
+  color: var(--main-color);
   font-size: 5.6rem;
   font-weight: 700;
   line-height: 1.3;
 }
 
 .home-content p {
-  /* margin-top: 20px; */
+  margin-top: 0.6rem;
   font-size: 1.8rem;
 }
 
