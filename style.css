@@ -636,15 +636,24 @@ span {
   }
 }
 
-@media screen and (max-device-width: 410px) and (min-device-width: 392px) {
+@media screen and (max-device-width: 393px) and (min-device-height: 851px) {
   .skills-container {
     grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+  }
+  .skills-container .skills-box img {
+    /* margin-left: 5rem; */
+    width: auto;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
   }
 }
 
-@media (max-width: 395px) {
+@media (max-width: 392px) {
   .skills-container {
     grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
   }
 }
 
