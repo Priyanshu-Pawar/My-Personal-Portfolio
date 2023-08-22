@@ -639,6 +639,7 @@ span {
 @media screen and (max-device-width: 393px) and (min-device-height: 851px) {
   .skills-container {
     grid-template-columns: repeat(2, 1fr);
+<<<<<<< HEAD
     padding: 2rem;
   }
   .skills-container .skills-box img {
@@ -647,6 +648,9 @@ span {
     justify-content: center;
     text-align: center;
     justify-items: center;
+=======
+     padding: 3rem;
+>>>>>>> 978469eb61b6dbcc92a22a41aee7e9f152e118a4
   }
 }
 
