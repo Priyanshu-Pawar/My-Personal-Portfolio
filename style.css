@@ -639,6 +639,7 @@ span {
 @media screen and (max-device-width: 410px) and (min-device-width: 392px) {
   .skills-container {
     grid-template-columns: repeat(2, 1fr);
+     padding: 3rem;
   }
 }
 
