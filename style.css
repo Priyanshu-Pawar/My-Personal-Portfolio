@@ -635,7 +635,14 @@ span {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 390px) {
+
+@media screen and (max-device-width: 410px) and (min-device-width: 392px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 395px) {
   .skills-container {
     grid-template-columns: repeat(2, 1fr);
   }
